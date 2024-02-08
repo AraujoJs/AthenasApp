@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/TitleViewForm"
+        android:text="@string/login_title_1"
+        app:layout_constraintBottom_toTopOf="@id/login_edit_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_edit_user"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/login_edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_user_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_edit_password"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/login_txt_forget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_password_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/login_txt_forget"
+        style="@style/TextViewForm"
+        android:text="@string/forget_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_password" />
+
+    <Button
+        android:id="@+id/login_button_connect"
+        style="@style/Theme.Athenas.Button"
+        android:text="@string/button_connect"
+        app:layout_constraintBottom_toTopOf="@id/login_txt_not_registered"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_forget" />
+
+    <TextView
+        android:id="@+id/login_txt_not_registered"
+        style="@style/TextViewForm"
+        android:text="@string/have_no_account"
+        app:layout_constraintBottom_toTopOf="@id/login_view_diviser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_button_connect" />
+
+    <View
+        android:id="@+id/login_view_diviser"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/gray_500"
+        app:layout_constraintBottom_toTopOf="@id/login_txt_connect_with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_not_registered" />
+
+    <TextView
+        android:id="@+id/login_txt_connect_with"
+        style="@style/TextViewForm"
+        android:layout_gravity="center"
+        android:text="@string/or_connect_with"
+        app:layout_constraintBottom_toTopOf="@id/login_container_social_midia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_view_diviser" />
+
+    <LinearLayout
+        android:id="@+id/login_container_social_midia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_txt_connect_with">
+
+        <ImageView
+            android:id="@+id/login_button_google"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="1dp"
+            android:src="@drawable/logo_google" />
+
+        <ImageView
+            android:id="@+id/login_button_apple"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:padding="1dp"
+            android:src="@drawable/logo_apple" />
+
+        <ImageView
+            android:id="@+id/login_button_facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/logo_facebook" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

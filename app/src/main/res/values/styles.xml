@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleViewForm" parent="TextViewForm">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+    </style>
+
+    <style name="TextViewForm" parent="ViewForm">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.Athenas.FormEditTextInput" parent="ViewForm">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="hintEnabled">false</item>
+    </style>
+    
+    <style name="Theme.Athenas.FormEditText" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColorHint">@color/gray_500</item>
+    </style>
+
+    <style name="ViewForm">
+        <item name="android:layout_marginStart">36dp</item>
+        <item name="android:layout_marginEnd">36dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.Athenas.Button" parent="ViewForm">
+        <item name="android:padding">20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/yellow_500</item>
+    </style>
+
+
+
+</resources>

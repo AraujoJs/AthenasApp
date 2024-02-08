@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Athenas</string>
+    <string name="login_title_2">Bienvenue à Athènas</string>
+    <string name="input_name">NOM D\'UTILISATEUR</string>
+    <string name="input_password">MOT DE PASSE</string>
+    <string name="forget_password"><b>oublié mot de passe?</b></string>
+    <string name="button_connect"><b>CONNECTER</b></string>
+    <string name="have_no_account">Vous n\'avez pas encore \nun compte? <b><font color="#F1DA08" >Se régistrer</font></b></string>
+    <string name="or_connect_with">Ou connecter avec:</string>
+    <string name="create_title">Allons créer un compte!</string>
+    <string name="input_email">EMAIL</string>
+    <string name="input_confirm">MOT DE PASSE (CONFIRMER)</string>
+    <string name="read_and_accepted">J\'ai lu et j\'accepte les Conditions Générales et la Politique de Confidentialité</string>
+    <string name="button_register">REGISTRER</string>
+    <string name="have_already_account">Vous avez déjà un compte? Connecter</string>
+    <string name="recover_account">Récuperer mot-de-passe</string>
+    <string name="enter_email">Saisissez votre adresse mail pour récuperer votre compte</string>
+    <string name="enter_code_confirm">Saisissez le code de confirmation</string>
+    <string name="code_four_numbers">Un code de 4-chiffres a été envoyé à %s@gmail.com</string>
+    <string name="button_resend">Renvoyer code</string>
+    <string name="button_continue">CONTINUER</string>
+    <string name="post_user_name">anonyme</string>
+    <string name="post_desc">Lorem Imptum De (BAC blanc TS - 2O19) - une excellente copie à lire. Copie 17/20.</string>
+    <string name="grade_title">note:</string>
+    <string name="grade">20/20</string>
+    <string name="button_home">HOME</string>
+    <string name="button_forum">FORUM</string>
+    <string name="button_profile">PROFILE</string>
+    <string name="user_name">user_name</string>
+    <string name="user_class">classe</string>
+    <string name="user_score_title">Score:</string>
+    <string name="user_score">400</string>
+    <string name="my_forums">Mes Communautés</string>
+    <string name="input_search">Chercher</string>
+    <string name="forum_title">Philosophie general</string>
+    <string name="forum_message">Pour le BAC, est-ce que vous saves si il faut faire l\'iscription?</string>
+    <string name="forum_message2">"@Philippe: Je vend des petits gateaux!"</string>
+    <string name="type_message">Écrire un message...</string>
+
+    <!-- SUBJECTS -->
+    <string name="philo">Philosophie</string>
+    <string name="math">Mathématique</string>
+    <string name="chemistry">Chimie</string>
+    <string name="physics">Physique</string>
+    <string name="history">Histoire</string>
+    <string name="geography">Géographie</string>
+    <string name="science_computer">NSI</string>
+    <string name="hist_spe">HGGSP</string>
+    <string name="math_spe">Math (spé)</string>
+    <string name="snt">SNT</string>
+    <string name="french">Français</string>
+    <string name="login_title_1">Salut 👋🏻\nBienvenue à Athénas</string>
+
+</resources>
