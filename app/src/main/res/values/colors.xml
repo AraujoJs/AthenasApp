@@ -12,4 +12,6 @@
     <color name="blue_100">#EAF2FF</color>
     <color name="red_500">#FF3742</color>
     <color name="black">#000000</color>
+    <color name="yellow_disabled">#FAF3C3</color>
+    <color name="yellow_enabled">#F0C838</color>
 </resources>
