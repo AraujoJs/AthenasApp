@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register.view.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_title"
+        style="@style/TitleViewForm"
+        android:text="@string/register_title"
+        app:layout_constraintBottom_toTopOf="@id/register_edit_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_edit_user"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/register_edit_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_edit_user_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_edit_mail"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/register_edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_edit_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_edit_email_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_edit_password"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/register_edit_confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_edit_mail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_edit_password_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_edit_confirm"
+        style="@style/Theme.Athenas.FormEditTextInput"
+        app:layout_constraintBottom_toTopOf="@id/register_check_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_edit_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_edit_confirm_input"
+            style="@style/Theme.Athenas.FormEditText"
+            android:autofillHints="@null"
+            android:hint="@string/input_confirm"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        style="@style/ViewForm"
+        android:id="@+id/register_check_input"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_edit_confirm">
+
+        <CheckBox
+            android:backgroundTint="@color/gray_200"
+            android:id="@+id/register_check_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/register_check_text"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_600"
+            android:text="@string/app_terms" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/register_button_register"
+        style="@style/Theme.Athenas.Button"
+        android:text="@string/button_register"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_check_input" />
+
+    <TextView
+        android:id="@+id/register_txt_not_registered"
+        style="@style/TextViewForm"
+        android:text="@string/have_already_account"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_button_register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
