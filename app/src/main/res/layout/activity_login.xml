@@ -5,27 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".login.view.LoginActivity">
 
     <TextView
         android:id="@+id/login_title"
         style="@style/TitleViewForm"
+        android:layout_marginBottom="50dp"
         android:text="@string/login_title_1"
-        app:layout_constraintBottom_toTopOf="@id/login_edit_user"
+        app:layout_constraintBottom_toTopOf="@id/login_edit_user_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_edit_user"
+        android:id="@+id/login_edit_user_input"
         style="@style/Theme.Athenas.FormEditTextInput"
-        app:layout_constraintBottom_toTopOf="@id/login_edit_password"
+        app:layout_constraintBottom_toTopOf="@id/login_edit_password_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_title">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_edit_user_input"
+            android:id="@+id/login_edit_user"
             style="@style/Theme.Athenas.FormEditText"
             android:autofillHints="@null"
             android:hint="@string/input_name"
@@ -33,15 +34,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/login_edit_password"
+        android:id="@+id/login_edit_password_input"
         style="@style/Theme.Athenas.FormEditTextInput"
         app:layout_constraintBottom_toTopOf="@id/login_txt_forget"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_edit_user">
+        app:layout_constraintTop_toBottomOf="@id/login_edit_user_input">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_edit_password_input"
+            android:id="@+id/login_edit_password"
             style="@style/Theme.Athenas.FormEditText"
             android:autofillHints="@null"
             android:hint="@string/input_password"
@@ -53,16 +54,18 @@
         style="@style/TextViewForm"
         android:text="@string/forget_password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_edit_password" />
+        app:layout_constraintTop_toBottomOf="@id/login_edit_password_input" />
 
-    <Button
-        android:id="@+id/login_button_connect"
-        style="@style/Theme.Athenas.Button"
-        android:text="@string/button_connect"
-        app:layout_constraintBottom_toTopOf="@id/login_txt_not_registered"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <com.example.athenas.common.view.LoadingButton
+        app:layout_constraintTop_toBottomOf="@id/login_txt_forget"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_txt_forget" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_txt_not_registered"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/login_btn_enter"
+        app:ola="@string/enter" />
 
     <TextView
         android:id="@+id/login_txt_not_registered"
@@ -71,7 +74,7 @@
         app:layout_constraintBottom_toTopOf="@id/login_view_diviser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_button_connect" />
+        app:layout_constraintTop_toBottomOf="@id/login_btn_enter" />
 
     <View
         android:id="@+id/login_view_diviser"
