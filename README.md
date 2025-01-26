@@ -2,6 +2,10 @@
 
 Athenas est une plateforme éducative open source conçue pour permettre aux élèves de partager leurs travaux scolaires avec leurs pairs et de gagner des récompenses en échange.
 
+![alt text](image01.webp)
+![alt text](image03.webp)
+![alt text](image04.webp)
+
 ## Fonctionnalités
 
 - Partage sécurisé de travaux scolaires tels que des copies, des cours, des devoirs maison (DM) et des devoirs surveillés (DS).
